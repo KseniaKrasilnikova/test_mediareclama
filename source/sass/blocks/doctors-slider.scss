@@ -1,0 +1,127 @@
+.doctors-slider {
+  position: relative;
+  max-width: 347px;
+
+  @include vp--1023 {
+    max-width: 100%;
+  }
+}
+
+.doctors-slider__swiper {
+  width: 90%;
+  height: 100%;
+
+  @include vp--1023 {
+    width: 100%;
+  }
+
+  @include vp--767 {
+    overflow: visible;
+  }
+}
+
+.doctors-slider__list {
+  @include reset-list;
+  display: flex;
+}
+
+.doctors-slider__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.doctors-slider__slide {
+  display: block;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+.doctors-slider__img {
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-50%) translateY(-50%);
+
+    border-radius: 10px;
+  }
+}
+
+.doctors-slider__slide {
+  display: block;
+  transition: background-color $trans-default;
+  width: fit-content;
+  padding-bottom: 100%;
+}
+
+.doctors-slider__btn {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 25px;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+
+  cursor:pointer;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+  transition: color $trans-default, background-color $trans-default;
+  border-radius: 50%;
+  background-color: $color-default-white;
+
+  @include vp--767 {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    color: $color-raven;
+  }
+
+  &.doctors-slider__btn--prev {
+    left: 0;
+    transform: rotate(180deg);
+
+    @include vp--1023 {
+      left: -2%;
+    }
+  }
+
+  &.doctors-slider__btn--next {
+    right: 0;
+
+    @include vp--1023 {
+      right: -2%;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-navy-blue;
+    svg {
+      color: $color-default-white;
+    }
+  }
+}
+
+.doctors-slider__sign {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -30px;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  padding: 0 30px;
+
+  font-size: 12px;
+  line-height: normal;
+  color: $color-nobel;
+  text-align: center;
+}

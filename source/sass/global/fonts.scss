@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  src:
+    url("../fonts/commissioner-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/commissioner-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  src:
+    url("../fonts/commissioner-cyrillic-500.woff2") format("woff2"),
+    url("../fonts/commissioner-cyrillic-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+
+  src:
+    url("../fonts/commissioner-cyrillic-600.woff2") format("woff2"),
+    url("../fonts/commissioner-cyrillic-600.woff") format("woff");
+}

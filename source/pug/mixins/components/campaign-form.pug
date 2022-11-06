@@ -1,0 +1,22 @@
+mixin campaign-form()
+  form(action="#", method="POST").campaign-form
+    .campaign-form__title Участвовать в акции
+    .campaign-form__content
+      p.campaign-form__text Для того чтобы принять участие в акции, позвоните нам: (812) 123-45-67 или оставьте ваш телефон:
+      +custom-input({
+        mods: "custom-input--bordered custom-input--focus-shift custom-input--focus-blue campaign-form__input",
+        inputType: "text",
+        inputId: "userName",
+        inputName: "userName",
+        inputPlaceholder: "Имя Фамилия",
+        inputError: "Введите данные",
+      })(data-validate-type="text")
+      +custom-input({
+        mods: "custom-input--bordered custom-input--focus-blue campaign-form__input",
+        inputPlaceholder: "Контактный телефон",
+        inputType: "tel",
+        inputId: "userTel",
+        inputName: "userPhone",
+        inputError: "Введите телефон"
+      })(data-validate-type="phone")
+      button.button.button--blue.button--radius.button--shrink.campaign-form__btn(type="submit") Отправить заявку

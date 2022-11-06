@@ -1,0 +1,15 @@
+mixin doctors-slider(data)
+
+  .doctors-slider&attributes(attributes)
+    .swiper.swiper--doctors.doctors-slider__swiper
+      ul.swiper-wrapper.doctors-slider__list
+        each item in data
+          li.swiper-slide.doctors-slider__item
+            a(href="#").doctors-slider__slide
+              .doctors-slider__img
+                +picture("content", item.img, "jpg", item.width, item.height, "Фото специалиста")
+                .doctors-slider__sign!=item.text
+    button.swiper-button-prev.button.button--transparent.doctors-slider__btn.doctors-slider__btn--prev
+      +icon("icon-arrow-left", 16, 7)
+    button.swiper-button-next.button.button--transparent.doctors-slider__btn.doctors-slider__btn--next
+        +icon("icon-arrow-left", 16, 7)

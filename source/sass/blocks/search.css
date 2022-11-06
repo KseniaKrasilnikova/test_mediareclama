@@ -1,0 +1,11 @@
+.search__icon {
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+}
+
+.search__input-btn {
+  margin-right: 23px;
+  padding: 4px 0 0;
+}

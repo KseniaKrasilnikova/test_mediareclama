@@ -1,0 +1,14 @@
+mixin icons-list()
+  ul.icons-list
+    li.icons-list__item.hidden-mobile
+      a(href="#", aria-label="Личный кабинет").icons-list__link.button.button--transparent.button--icon-nav.hover-black
+        +icon("icon-profile", 24, 27)
+    li.icons-list__item
+      a(href="#", aria-label="Избранное").icons-list__link.button.button--transparent.button--icon-nav.hover-black
+        +icon("icon-heart", 30, 27)
+    li.icons-list__item
+      a(href="#", aria-label="В корзину").icons-list__link.button.button--transparent.button--icon-nav.hover-black
+        +icon("icon-cart", 25, 27)
+        span.icons-list__badge 4
+
+

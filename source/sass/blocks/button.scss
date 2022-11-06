@@ -1,0 +1,39 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &--transparent {
+    background-color: $color-transparent;
+  }
+
+  &--icon-nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  &--blue {
+    border-color: $color-navy-blue;
+    background: $color-navy-blue;
+    color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      border-color: $color-dodger-blue;
+      background: $color-dodger-blue;
+    }
+  }
+
+  &--radius {
+    border-radius: 5px;
+  }
+
+  &--shrink:active {
+    transition: none;
+    transform: scale(.95);
+  }
+}

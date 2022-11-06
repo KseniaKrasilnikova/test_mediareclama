@@ -1,0 +1,18 @@
+mixin campaign()
+  section.campaign
+    .container
+      .campaign__layout
+        .campaign__img
+          +picture("content", "smile", "jpg", 1275, 1230, "Улыбка")
+        .campaign__text-block
+          h2.campaign__title Акция
+          p.campaign__text Профессиональная гигиена зубов + отбеливание системой Opalescence всего за&nbsp;
+            span.campaign__text-accent-size.campaign__text-accent-color #[b 9900&nbsp;руб.]
+          p.campaign__text-terms Срок действия акции с&nbsp;
+            span.campaign__text-accent-color #[b 01.12.2013]
+            | &nbsp;г.&nbsp;до&nbsp;
+            span.campaign__text-accent-color #[b 01.01.2014]
+            | &nbsp;г.
+          .campaign__arrow Сделайте свою улыбку неотразимой и привлекательной
+        .campaign__form(data-validate)
+          +campaign-form()

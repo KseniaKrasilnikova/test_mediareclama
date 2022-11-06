@@ -1,0 +1,35 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Components
+//---------------------------------
+
+@import "components/custom-input";
+
+// Blocks
+//---------------------------------
+@import "blocks/advantages";
+@import "blocks/bg-overlay";
+@import "blocks/button";
+@import "blocks/campaign";
+@import "blocks/campaign-form";
+@import "blocks/doctors-slider";
+@import "blocks/icons-list";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/mobile-nav";
+@import "blocks/page-content";
+@import "blocks/search";
