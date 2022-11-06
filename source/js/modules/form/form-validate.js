@@ -1,7 +1,7 @@
 // Константы и переменные
 
 const BASE_COUNTRY_CODE = '+7';
-const MASK = '+7 (___) ___ __ __'
+const MASK = '+7 (___) ___ __ __';
 const BASE_MATRIX = '(___) ___ __ __';
 const phoneLength = BASE_COUNTRY_CODE.length + BASE_MATRIX.length;
 

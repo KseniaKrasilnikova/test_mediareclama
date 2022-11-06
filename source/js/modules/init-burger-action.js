@@ -32,7 +32,7 @@ const closeMenu = () => {
 const closeMenuOnResize = () => {
   if (mobileMenu.classList.contains('active')) {
     closeMenu();
-    scrollLock.enableScrolling()
+    scrollLock.enableScrolling();
   }
 };
 

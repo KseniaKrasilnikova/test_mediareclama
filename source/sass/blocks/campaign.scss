@@ -4,7 +4,7 @@
 
 .campaign__layout {
   display: grid;
-  grid-template-columns:  0.8fr 1.4fr 1.2fr;
+  grid-template-columns: 0.8fr 1.4fr 1.2fr;
   column-gap: 24px;
 
   @include vp--1023 {
@@ -121,7 +121,7 @@
   background-color: rgba(242, 242, 242, 1);
   border-radius: 5px;
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     right: -89px;
@@ -136,7 +136,7 @@
   @include vp--767 {
     width: 100%;
 
-    &:after {
+    &::after {
       display: none;
     }
   }

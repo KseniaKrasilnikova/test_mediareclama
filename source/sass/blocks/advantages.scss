@@ -21,6 +21,7 @@
 
 .advantages__left {
   grid-column: auto;
+
   @include vp--1023 {
     grid-column: 1/3;
   }
@@ -45,6 +46,7 @@
 
 .advantages__list-with-icons {
   list-style: none;
+
   li {
     display: flex;
     flex-wrap: nowrap;

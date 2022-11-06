@@ -34,8 +34,9 @@
 
 .doctors-slider__slide {
   display: block;
+  transition: background-color $trans-default;
   width: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 100%;
 }
 
 .doctors-slider__img {
@@ -52,13 +53,6 @@
   }
 }
 
-.doctors-slider__slide {
-  display: block;
-  transition: background-color $trans-default;
-  width: fit-content;
-  padding-bottom: 100%;
-}
-
 .doctors-slider__btn {
   position: absolute;
   z-index: 10;
@@ -68,7 +62,7 @@
   width: 30px;
   height: 30px;
 
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
   transition: color $trans-default, background-color $trans-default;
   border-radius: 50%;
@@ -104,6 +98,7 @@
   &:hover,
   &:focus {
     background-color: $color-navy-blue;
+
     svg {
       color: $color-default-white;
     }

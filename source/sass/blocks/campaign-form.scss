@@ -5,7 +5,7 @@
   overflow: hidden;
   box-shadow: inset 0 0 0 1px $color-solitude-2;
   will-change: transform;
-  transition: box-shadow .25s;
+  transition: box-shadow 0.25s;
 }
 
 .campaign-form__title {
@@ -38,7 +38,7 @@
   font-weight: 500;
 
   text-align: center;
-  transition: border-color .25s, color .25s, background .25s;
+  transition: border-color 0.25s, color 0.25s, background 0.25s;
 }
 
 .campaign-form__text {

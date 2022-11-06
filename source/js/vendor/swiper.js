@@ -2,7 +2,7 @@ const swiper = () => {
 
   /**
  * Swiper 7.4.1
- * Most modern mobile touch slider and framework with hardware accelerated transitions  
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
  * Copyright 2014-2021 Vladimir Kharlampidi

@@ -1,5 +1,5 @@
 const initSwiper = () => {
-
+  /* eslint-disable-next-line */
   let doctorsSwiper = new Swiper('.swiper--doctors', {
     freeMode: true,
     slidesPerView: 1,

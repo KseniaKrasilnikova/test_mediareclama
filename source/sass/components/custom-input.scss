@@ -82,7 +82,7 @@
       font-size: 13px;
       color: $color-default-black;
 
-      transition: border-color .25s, box-shadow .25s;
+      transition: border-color 0.25s, box-shadow 0.25s;
       box-shadow: none;
       border: 1px solid $color-raven;
       border-radius: 5px;
@@ -99,8 +99,8 @@
 
   &--focus-shift label {
     input:focus::placeholder {
-      transform: scale(.75) translate(-50px, -8px);
-      color: #A9B3BF;
+      transform: scale(0.75) translate(-50px, -8px);
+      color: #a9b3bf;
     }
   }
 

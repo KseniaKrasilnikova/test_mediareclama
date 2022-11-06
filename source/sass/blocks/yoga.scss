@@ -2,7 +2,7 @@
   h2 {
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
     margin: 0 0 30px;
   }
 
@@ -39,7 +39,7 @@
     font-size: 14px;
     line-height: 1.8;
 
-    &:before {
+    &::before {
       position: absolute;
       left: 3px;
       top: 10px;
