@@ -1,0 +1,55 @@
+.yoga {
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: .02em;
+    margin: 0 0 30px;
+  }
+
+  h3 {
+    margin: 30px 0;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  a {
+    color: #f99f79;
+    transition: opacity $tf-default;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  p {
+    margin: 20px 0 30px;
+  }
+
+  ul {
+    @include reset-list;
+  }
+
+  li {
+    position: relative;
+    padding-left: 38px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    &:before {
+      position: absolute;
+      left: 3px;
+      top: 10px;
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3.5px 0 3.5px 12px;
+      border-color: transparent transparent transparent #f99f79;
+    }
+  }
+}
